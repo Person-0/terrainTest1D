@@ -46,7 +46,7 @@ function draw() {
         );
     }
 
-    const slSmplHalf = 0.25;
+    const slSmplHalf = 1;
     const midP = hCenter + offset;
     const mid = terrain(midP);
     const midL = terrain(midP - slSmplHalf);
