@@ -1,0 +1,9 @@
+{
+  "main": "src/main.ts",
+  "devDependencies": {
+    "vite": "^8.0.10"
+  },
+  "scripts": {
+    "start": "vite dev"
+  }
+}
