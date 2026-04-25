@@ -46,14 +46,15 @@ function draw() {
         );
     }
 
+    const slSmplHalf = 0.25;
     const midP = hCenter + offset;
     const mid = terrain(midP);
-    const midL = terrain(midP - 0.25);
-    const midR = terrain(midP + 0.25);
+    const midL = terrain(midP - slSmplHalf);
+    const midR = terrain(midP + slSmplHalf);
     ctx.fillRect(hCenter - 2, vCenter + mid, 4, 4);
 
     const y = vCenter + mid;
-    const slope = (midR - midL) / 0.5;
+    const slope = (midR - midL) / (slSmplHalf * 2);
     const dx = 20;
     const dy = slope * dx;
     ctx.beginPath();
